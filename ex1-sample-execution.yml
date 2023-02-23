@@ -1,0 +1,10 @@
+# sample code for execution
+-
+  name: Sample execution
+  hosts: node1
+  tasks:
+  - name: Install git
+    yum:
+      name: git
+      state: present
+      
