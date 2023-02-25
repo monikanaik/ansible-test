@@ -1,0 +1,15 @@
+# this is copy and file module
+- 
+  name: PB on use case of copy and file module
+  hosts: all
+  tasks:
+    - name: code to create file
+      file:
+        path: /opt/note.txt
+        state: touch
+
+    - name: code to write a message
+      copy:
+        content: "Hello World!"
+        dest: /opt/note.txt
+
