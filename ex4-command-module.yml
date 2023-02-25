@@ -1,8 +1,8 @@
 # this is command module
 - 
- name: usecase on command module
- hosts: node1
- tasks:
-  name: below code to create a directory
-  command:
-    cmd: mkdir /opt/USA
+  name: usecase on command module
+  hosts: node1
+  tasks:
+    name: below code to create a directory
+    command:
+      cmd: mkdir /opt/USA
