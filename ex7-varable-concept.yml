@@ -4,18 +4,18 @@
   vars:
     a: 10
     b: 35.5
-    c: "DSDFGFGH909"
+    c: 'DSDFGFGH909'
     d: "Welcome to India"
   tasks:
   - name: code  to create file
     file:
-      path: /opt/variable.txt
+      path: /opt/variables.txt
       action: touch
   
   - name: code to write variable values into the file
     lineinfile:
-      path: /opt/variable.txt
+      path: /opt/variables.txt
       line: 'The value of A is {{a}} B is {{b}} C is {{c}} D is {{d}}'
       create: yes
-      
+
 
