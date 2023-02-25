@@ -1,0 +1,18 @@
+# this is
+-
+  name: pb on use of module
+  hosts: node1
+  tasks:
+    - name: task on install of net-tool app
+      yum:
+        name: net-tool
+        state: present
+
+    - name: start of httpd services
+      service:
+        name: httpd
+        state: started
+
+    - name: reboot machine
+      reboot:
+        
