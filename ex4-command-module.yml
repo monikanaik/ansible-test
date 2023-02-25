@@ -3,6 +3,6 @@
   name: usecase on command module
   hosts: node1
   tasks:
-    name: below code to create a directory
-    command:
+   - name: below  code to create a directory
+     command:
       cmd: mkdir /opt/USA
