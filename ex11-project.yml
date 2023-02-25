@@ -34,12 +34,12 @@
 
     - name: code to create index.html file if does not exist
       file:
-        path: /var/www/index.html
+        path: /var/www/html/index.html
         state: touch
 
     - name: code to display message on webpage
       lineinfile:
-        dest: /var/www/index.html
+        dest: /var/www/html/index.html
         line: '<html>
               <body>
               <h1>THIS IS ANSIBLE PROJECT</h1>
