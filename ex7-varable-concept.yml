@@ -9,12 +9,12 @@
   tasks:
   - name: code  to create file
     file:
-      path: /opt/variables_data.txt
-      action: touch
+      path: /opt/variables.txt
+      state: touch
   
   - name: code to write variable values into the file
     lineinfile:
-      path: /opt/variables_data.txt
+      path: /opt/variables.txt
       line: 'The value of A is {{a}} B is {{b}} C is {{c}} D is {{d}}'
       create: yes
 
