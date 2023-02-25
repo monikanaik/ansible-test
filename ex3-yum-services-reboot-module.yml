@@ -3,9 +3,9 @@
   name: pb on use of module
   hosts: node1
   tasks:
-    - name: task on install of net-tool app
+    - name: task on install of net-tools app
       yum:
-        name: net-tool
+        name: net-tools
         state: present
 
     - name: start of httpd services
