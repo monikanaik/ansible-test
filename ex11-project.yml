@@ -22,12 +22,12 @@
         path: /opt/apache-logs
         state: directory
 
-    - name: code to create file under log directory
+    - name: code to create a file under logs directory
       file:
         path: /opt/apache-logs/apache-log.logs
         state: touch
     
-    - name: code to write code into log file
+    - name: code to write write a message into log file
       lineinfile:
         dest: /opt/apache-logs/apache-log.logs
         line: 'Apache web server is successfully installed'
