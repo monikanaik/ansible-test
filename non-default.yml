@@ -1,1 +1,1 @@
-node2 ansible_host=192.168.1.200 ansible_connection=ssh ansible_port=22 ansible_user=root ansible_ssh_pass=naikmonika012
+node2 ansible_host=192.168.1.250 ansible_connection=ssh ansible_port=22 ansible_user=root ansible_ssh_pass=naikmonika012
