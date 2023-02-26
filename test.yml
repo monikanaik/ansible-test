@@ -26,7 +26,7 @@
       file:
         path: /opt/apache-logs/apache-log.logs
         state: touch
-    
+
     - name: code to write code into log file
       lineinfile:
         dest: /opt/apache-logs/apache-log.logs
@@ -42,7 +42,7 @@
         dest: /var/www/html/index.html
         line: '<html>
                <body>
-               <h1>THIS IS ANSIBLE PROJECT</h1>
-               </body>
-               </html>'
+              <h1>THIS IS ANSIBLE PROJECT</h1>
+              </body>
+              </html>'
               
