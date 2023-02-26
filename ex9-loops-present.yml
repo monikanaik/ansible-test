@@ -1,6 +1,6 @@
 -
   name: pb on use case of loops
-  hosts: node2
+  hosts: client2
   tasks:
    - name: below code for yum installations using loops
      yum:
